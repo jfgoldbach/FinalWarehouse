@@ -1,0 +1,90 @@
+.shopping_cart{
+    background: linear-gradient(145deg, #f4f4f4, #d2d2d2);
+    box-shadow:  3px 3px 6px #bebebe,
+             -3px -3px 6px #ffffff;
+    overflow: hidden;
+}
+
+.shopping_cart:hover, .shopping_cart:focus{
+    color: rgb(173, 173, 255) !important;
+}
+
+.shopping_counter{
+    height: 40%;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(255, 40, 40);
+    align-items: center;
+    justify-content: center;
+    transition: 0.33s !important
+}
+
+.shopping_counter p{
+    transform: translateY(30%);
+}
+
+.logo, .logo:hover{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items:center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-clip:unset;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #8360c3, #2ebf91);
+    background-image: linear-gradient(45deg, #bdc3c7, #2c3e50);
+    background-size: 400%;
+    animation: spin 5s infinite alternate;
+}
+
+.logo_container{
+    filter: invert(100%);
+    background: #d3c1af;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.logo img{
+    padding: 9px;
+}
+.logo img::before{
+    background-color: red;
+    width: 100px;
+}
+
+.logo_name_short{
+    display: none;
+}
+
+.nav_links{
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+@keyframes spin {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+@media screen and (max-width: 786px) {
+    .logo_name_full{
+        display: none;
+        content: 'FW';
+    }
+
+    .logo_name_short{
+        display: block !important;
+    }
+
+    .navbar.container {
+        padding: 0 !important;
+    }
+
+    .nav_links{
+        margin: 0;
+        margin-right: 15px;
+        display: flex !important;
+        justify-content: space-around !important;
+        gap: 5px;
+    }
+    
+}

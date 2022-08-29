@@ -1,0 +1,100 @@
+body{
+    background-color: #eeeeee;
+}
+
+/*
+.carousel-item{
+    display: flex !important;
+}*/
+
+.min_height{
+    min-height: 94vh !important;
+}
+
+.carousel_caption{
+    display: flex;
+    width: 33%;
+    height: 100%;
+    transform: translateX(157.6%);
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    bottom: 0 !important;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0,0,0,0.65);
+    /*background-color: white !important;*/
+}
+
+.carousel{
+    background: #ffffff;
+    box-shadow:  8px 8px 16px #bebebe,
+             -8px -8px 16px #ffffff;
+}
+
+.carousel-indicators{
+    margin-bottom: 6px !important;
+}
+
+.carousel-indicators button{
+    --size: 13px;
+    background: linear-gradient(145deg, #ffffff, #e2e2e2) !important;
+    filter: invert(100%);
+    height: var(--size) !important;
+    width: var(--size) !important;
+    border-radius: 50%;
+    border: 2px solid rgb(75,75,75) !important;
+    box-shadow: 0 0 30px 3px rgba(0,0,0,0.5);
+}
+
+.info_icon{
+    margin-left: 6px;
+    --size: 17px;
+    font-family: Arial, Helvetica, sans-serif ;
+    display: flex;
+    font-size: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    width: var(--size) !important;
+    height: var(--size) !important;
+    border-radius: 50%;
+    min-width: 10px;
+    cursor: help;
+}
+
+.empf_container{
+    box-shadow: inset 1px 1px 5px #bebebe,
+            inset -1px -1px 5px #ffffff;
+}
+
+/*
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    border-radius: 6px;
+    background: linear-gradient(145deg, #a4a4a4, #747474) !important;
+}
+
+.carousel-control-prev-icon span, .carousel-control-next-icon span{
+    color: red !important;
+    background-color: black !important;
+    border: 1px solid red !important;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 75px !important;
+}*/
+
+@media screen and (max-width: 786px) {
+    .carousel img{
+        width: 100% !important;
+        height: 350px !important;
+    }
+
+    .carousel_caption{
+        height: 150px;
+        width: 100%;
+        transform: translateY(150px) translateX(-15%)
+    }
+
+    .carousel-inner{
+        height: 100%;
+    }
+}

@@ -1,0 +1,6 @@
+.categories{
+    border-radius: 50px;
+    box-shadow: inset 2px 2px 5px #bebebe,
+            inset -2px -2px 5px #ffffff;
+    cursor: pointer;
+}
